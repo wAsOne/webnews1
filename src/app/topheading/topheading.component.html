@@ -1,0 +1,25 @@
+<p>topheading works!</p>
+
+<div *ngFor="let d of topheadingDisplay">
+    {{d.title}}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let d of topheadingDisplay" class="col-md-12" style="border: 1px solid;">
+            <div class="col-md-12" >
+                <h5>
+                    {{d.title}}
+                </h5>
+            </div>
+            <div class="col-md-7">
+                {{d.content}}
+                <a href="{{d.url}}">Читать далее...</a>
+            </div>
+            <div class="col-md-5">
+                <img src="{{d.urlToImage}}" alt="" width="100%">
+            </div>
+
+        </div>
+    </div>
+</div>
